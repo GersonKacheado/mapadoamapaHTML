@@ -1,0 +1,157 @@
+@media screen and (max-width:689px) {
+
+
+}
+
+@media screen and (max-width: 969px) {
+
+
+}
+
+@media screen and (max-width: 1004px) {
+    * {font-size: 12em}
+    header h1 a span {font-size:90%}
+
+	header nav { position: absolute}
+	header nav ul {list-style: none; position:relative; top:20px; left: 10px }
+	header nav ul li { display:block;}
+	header nav li a{color:#f7acca; text-decoration:none; padding:0 5px; color: brown; font-weight: bold}
+
+
+	section {display: flex; flex-flow: row wrap; justify-content: center;}
+	    header nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 250px;
+        background: #fff;
+        overflow-x: auto;
+        z-index: 2;
+        -webkit-transition: all 500ms ease;
+        transition: all 500ms ease;
+        -webkit-transform: translate(100%, 0);
+        -ms-transform: translate(100%, 0);
+        transform: translate(100%, 0);
+    }
+    header ul.list-auto {
+        padding: 0;
+    }
+    header ul.list-auto li {
+        width: 100%;
+        border: solid #ccc;
+        border-width: 0 0 1px;
+    }
+    header li a {
+        padding: 15px 10px;
+    }
+    .control-nav { /* label icon */
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        display: block;
+        width: 30px;
+        padding: 5px 0;
+        border: solid #333;
+        border-width: 3px 0;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .control-nav:before {
+        content: "";
+        display: block;
+        height: 3px;
+        background: #333;
+    }
+
+    .control-nav-close {
+        position: fixed; /* label layer */
+        right: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        z-index: 1;
+        background: rgba(0,0,0,0.4);
+        -webkit-transition: all 500ms ease;
+        transition: all 500ms ease;
+        -webkit-transform: translate(100%, 0);
+        -ms-transform: translate(100%, 0);
+        transform: translate(100%, 0);
+    }
+
+		  /* checked nav */
+		input#control-nav {
+			display: block;
+		}
+
+		input#control-nav:focus ~ .control-nav {
+			border-color: #000;
+			box-shadow: 0px 0px 9px rgba(0,0,0,0.3);
+		}
+
+		input#control-nav:focus ~ .control-nav:before {
+			background: #000;
+		}
+
+		input#control-nav:checked ~ nav,
+		input#control-nav:checked ~ .control-nav-close {
+			-webkit-transform: translate(0, 0);
+			-ms-transform: translate(0, 0);
+			transform: translate(0, 0);
+		}
+		header h1 {
+			font-size: 2em;
+			line-height: 2em;
+		}
+		footer {font-size: 1.3em}
+		aside {margin-top: 20px}
+ /* table */
+	   table {
+		border: 0;
+	  }
+	  table caption {
+		font-size: 1.3em;
+	  }
+	  table thead {
+		border: none;
+		clip: rect(0 0 0 0);
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+	  }
+	  table tr {
+		border-bottom: 3px solid #ddd;
+		display: block;
+		margin-bottom: .625em;
+	  }
+	  table td {
+		border-bottom: 1px solid #ddd;
+		display: block;
+		font-size: .8em;
+		text-align: right;
+	  }
+	  table td:before {
+		/*
+		* aria-label has no advantage, it won't be read inside a table
+		content: attr(aria-label);
+		*/
+		content: attr(data-label);
+		float: left;
+		font-weight: bold;
+		text-transform: uppercase;
+	  }
+	  table td:last-child {
+		border-bottom: 0;
+	  }
+}
+
+@media screen and (min-width: 1320px) {
+	body {
+	margin: 0 auto
+}
+}

@@ -1,0 +1,41 @@
+*{outline:none}
+body {background-color: #ccc
+}
+div p {text-align:left; 
+}
+div p span {font-weight: bold
+}
+
+
+i[class='fas fa-share fa-1x'] {
+	position: relative; top:20px; left:10px;
+}
+
+i[class='fas fa-trash-alt fa-2x'] {
+	position: relative; top:0; left:10px;
+}
+
+.maxSize{
+    position: absolute;
+    top: auto; left: 0;
+    z-index: 9999;
+    height: 100vmax;
+    width: 100vmax; 
+}  
+.menor{width:1.5em; height:1.5em;        
+}
+
+.boxmenor{
+	background-color:rgba(233,235,239,0.8);text-align: center;
+}
+
+#icon {border-radius:50%; width:5%; height:5%;
+	box-shadow: 0.1em 0.1em 0.2em #fff
+}
+a#titulo{margin-left: 3px;
+    color:#fff; text-shadow: #aacb41 0.1em 0.1em 0.2em;
+}
+#logado {color:#fff;position: absolute; top:3.2em; left:165px; font-size:.80em;}
+
+.topo_section {margin-top: 10px}
+

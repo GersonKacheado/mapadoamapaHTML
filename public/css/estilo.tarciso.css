@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+@import url("../font-awesome-4.4.0/css/font-awesome.css");
+@import url('https://fonts.googleapis.com/css?family=Gruppo&subset=latin,latin-ext');
+
+/* ==========================================================================
+   Normatização CSS
+   ========================================================================== */
+
+/* Texto das noticias */
+@font-face { font-family: 'all_around_the_worldregular', sans-serif;
+    src: url('../../font-awesome-4.4.0/fonts/all_around_the_world-webfont.woff2') format('woff2'),
+    url('../../font-awesome-4.4.0/fonts/all_around_the_world-webfont.woff') format('woff');
+    font-weight: normal; font-style: normal;
+}
+
+/* texto da Logo */
+@font-face { font-family: 'anglo-saxon_capsregular';
+    src: url('../../font-awesome-4.4.0/fonts/saxon-webfont.woff2') format('woff2'),
+    url('../../font-awesome-4.4.0/fonts/saxon-webfont.woff') format('woff');
+    font-weight: normal; font-style: normal;
+}
+
+@font-face {font-family:'FontAwesome';
+    src:url('../../fontawesome-webfont.eot');
+    src:url('../../fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../../fontawesome-webfont.woff') format('woff'),
+    url('../../fontawesome-webfont.ttf') format('truetype'),
+    url('../../fontawesome-webfont.svg#FontAwesome') format('svg');
+    font-weight:normal; font-style:normal
+}
